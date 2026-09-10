@@ -10,4 +10,9 @@ public class HomeController {
 	public String home() {
 		return "web/home";
 	}
+
+	@GetMapping("/admin")
+	public String admin() {
+		return "redirect:/admin/categories";
+	}
 }
